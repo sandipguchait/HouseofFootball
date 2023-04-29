@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-const Alert = ({ type, message }) => {
+type Alert = {
+  type: string;
+  message: string;
+}
+
+const Alert = ({ type, message }:Alert) => {
 
     const [show, setShow] = useState(true);
 
